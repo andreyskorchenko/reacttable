@@ -1,4 +1,4 @@
-# reacttable
+# Reacttable
 
 ## Git clone
 
