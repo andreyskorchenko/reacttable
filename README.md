@@ -6,6 +6,12 @@
 git clone https://github.com/andreyskorchenko/reacttable.git
 ```
 
+## Change directory
+
+```
+cd reacttable
+```
+
 ## Project setup
 
 ```
