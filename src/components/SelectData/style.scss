@@ -1,0 +1,46 @@
+.select-data {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__small,
+  &__big {
+    width: 160px;
+    height: 160px;
+    background: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.15s linear;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+      border: 2px solid #0075ff;
+    }
+
+    img {
+      width: 80px;
+      height: 80px;
+      vertical-align: middle;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    p {
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 12px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

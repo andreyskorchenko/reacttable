@@ -1,0 +1,45 @@
+@font-face {
+  font-family: bebasneue;
+  src: url("./assets/fonts/bebasneue.eot") format("eot"),
+    url("./assets/fonts/bebasneue.woff2") format("woff2"),
+    url("./assets/fonts/bebasneue.woff") format("woff"),
+    url("./assets/fonts/bebasneue.ttf") format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: roboto;
+  src: url("./assets/fonts/roboto.eot") format("eot"),
+    url("./assets/fonts/roboto.woff") format("woff"),
+    url("./assets/fonts/roboto.ttf") format("ttf");
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  resize: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f6fc;
+  font-family: roboto;
+  font-size: 14px;
+}
+
+.add-user {
+  width: 40px;
+  height: 40px;
+  background: #0075ff;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+  font-family: roboto;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
