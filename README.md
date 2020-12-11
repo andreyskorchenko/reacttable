@@ -1,5 +1,11 @@
 # reacttable
 
+## Git clone
+
+```
+git clone https://github.com/andreyskorchenko/reacttable.git
+```
+
 ## Project setup
 
 ```
