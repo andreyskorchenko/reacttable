@@ -1,4 +1,5 @@
 import {
+  SET_DATA_TYPE,
   SET_USERS,
   SORT_ID,
   SORT_FIRSTNAME,
@@ -12,6 +13,7 @@ import {
   CHANGE_SHOW_ADD_USER,
 } from "./types";
 
+export const setDataType = (payload) => ({ type: SET_DATA_TYPE, payload });
 export const setUsers = (payload) => ({ type: SET_USERS, payload });
 export const tableSortId = () => ({ type: SORT_ID });
 export const tableSortFirstName = () => ({ type: SORT_FIRSTNAME });

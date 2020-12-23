@@ -1,4 +1,6 @@
+export const SET_DATA_TYPE = "SET_DATA_TYPE";
 export const SET_USERS = "SET_USERS";
+
 export const SORT_ID = "SORT_ID";
 export const SORT_FIRSTNAME = "SORT_FIRSTNAME";
 export const SORT_LASTNAME = "SORT_LASTNAME";

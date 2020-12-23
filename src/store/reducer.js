@@ -1,4 +1,5 @@
 import {
+  SET_DATA_TYPE,
   SORT_ID,
   SORT_FIRSTNAME,
   SORT_LASTNAME,
@@ -18,11 +19,17 @@ const initialState = {
   sort: "",
   order: "",
   search: "",
+  dataType: "",
   showAddUser: false,
 };
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
+    case SET_DATA_TYPE:
+      return {
+        ...state,
+        dataType: action.payload,
+      };
     case SET_USERS:
       return {
         ...state,
@@ -58,22 +65,14 @@ const reducer = (state = initialState, action) => {
       if (state.order === "desc") {
         return {
           ...state,
-          users: state.users.sort((a, b) => {
-            if (a.id < b.id) return -1;
-            if (a.id > b.id) return 1;
-            if (a.id === b.id) return 0;
-          }),
+          users: state.users.sort((a, b) => a.id - b.id),
           sort: "id",
           order: "asc",
         };
       } else {
         return {
           ...state,
-          users: state.users.sort((a, b) => {
-            if (a.id > b.id) return -1;
-            if (a.id < b.id) return 1;
-            if (a.id === b.id) return 0;
-          }),
+          users: state.users.sort((a, b) => a.id - b.id),
           sort: "id",
           order: "desc",
         };

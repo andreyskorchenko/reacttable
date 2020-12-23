@@ -1,8 +1,7 @@
 import React, { Fragment } from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import SelectData from "./components/SelectData";
-import Small from "./pages/Small";
-import Big from "./pages/Big";
+import Viewtable from "./pages/Viewtable";
 import "./index.scss";
 
 const App = () => {
@@ -14,12 +13,8 @@ const App = () => {
             <SelectData />
           </Route>
 
-          <Route path="/small">
-            <Small />
-          </Route>
-
-          <Route path="/big">
-            <Big />
+          <Route path="/viewtable">
+            <Viewtable />
           </Route>
         </Switch>
       </HashRouter>
